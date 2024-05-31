@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    session 4
+    <section id="card">
+      <h1>New Student</h1>
+      <h3>Role</h3>
+      <p>Bio Text Goes Here</p>
+    </section>
+    <script>
+      function updateCard(elem, name, role, bio) {
+        elem.innerHTML = `
+        <h1>${name}</h1>
+        <h3>${role}</h3>
+        <p>${bio}</p>
+        `;
+      }
+
+      // Example
+      const cardElement = document.getElementById("card");
+      updateCard(cardElement, "Vivek", "Instructor", "Teaches FE-2");
+    </script>
+  </body>
+  </html>
+
+
+        // function searchPerson(elemId,name){
+        //     let listname = document.getElementById(elemId);
+        //     // console.log(listname);
+        //     // console.dir(listname);
+        //     let child=listname.children;
+        //     // console.log(child);
+        //     let arr = Array.from(child);
+        //     // console.log(arr);
+        //     // console.dir(arr);
+        //     for (let i = 0; i < arr.length; i++) {
+        //         if(arr[i].innerText == name){
+        //             console.log("Found");
+        //             return; 
+        //         }
+        //     }
+        //     console.log("Not Found");
+
+        // }
+        // searchPerson('names','Donny');
